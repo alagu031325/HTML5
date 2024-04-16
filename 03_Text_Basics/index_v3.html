@@ -1,0 +1,61 @@
+<!-- Naming convention - No spaces-can use '-'/'_'/ lower case file names -->
+
+<!-- Doctype declaration is a must not a html element-->
+<!DOCTYPE html>
+
+<!-- An HTML element consists of starting(opening) and ending(closing) tag and everything in between - contains two main sections - 'head' (contains data that is not seen on the page but considered to be meta data about the page) and 'body' (contains content that everybody can see in the browser) -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <!-- meta tags with commonly used meta attributes -->
+        <meta name="author" content="Alagu">
+        <meta name="description" content="This page contains html elements that I am currently learning.">
+        <title>My First Web Page</title>
+        <link rel="icon" href="../static/images/html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="../static/css/main.css" type="text/css">
+    </head>
+    <body>
+        <!-- Generally we put only one h1(biggest heading) element per page and that explains what our page is about -->
+        <h1>Hello World!</h1>
+        <!-- Horizontal rule - Web pages do white space collapsing so they dont honour the white spaces that are added in html file - we can use line break instead -->
+        <hr>
+
+        <!-- HTML entites - are used to introduce some symbols or white spaces in the content and starts with '&' -->
+        <h2>I'm Ready to Learn HTML5</h2>
+        <p>This is my first web page😊</p>
+
+        <h3>My Daily Schedule</h3>
+        <p>&nbsp;&nbsp;&nbsp;1. I learn HTML5 🔰
+            <br>&nbsp;&nbsp;&nbsp;2. I learn CSS3 💷
+            <br>&nbsp;&nbsp;&nbsp;3. I learn JS ES6 💴
+            <br>&nbsp;&nbsp;&nbsp;4. I learn React 🤑
+            <br>... I use resources from <abbr title="Mozilla Developer Network">MDN</abbr> 🆓
+            <!-- This abbreviation tooltip will not be available to screen readers so anything important about page shouldnt go in there -->
+        </p>
+
+        <hr>
+
+        <!-- Every paragraph and heading starts on a new and it is a block level elements - whereas em/strong are inline elements that doesnt introduce break and spaces in the line-->
+        <h2>I am planning for a vacation ✈️</h2>
+        <p>I've been working hard and <em>really need a getaway 🏃‍♀️</em></p>
+        <p>I live in Ipswich and would love to visit Beach 🏖️</p>
+
+        <h3>Places I'd like to visit 💓</h3>
+        <p>I've heard good things about Scotland 🥶</p>
+        <p>I have also heard nice reviews about going here:</p>
+        <!-- informs browser that the content specifies a location -->
+        <address>
+            Clacton-on-Sea CO15 1FS
+        </address>
+
+        <!-- Block and inline elements -->
+        <h3>Places I'd like to avoid 😏</h3>
+        <p>Anywhere hot, <strong>No way</strong> 🥵</p>
+            
+        <!-- Header hierarchy are important for screen readers - So we should organize our page -->
+
+        <p>HTML Entites : &lt;&lt;&lt; &copy; Alagu  &gt;&gt;&gt;</p>
+
+        <hr>
+    </body>
+</html>

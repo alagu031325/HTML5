@@ -1,0 +1,121 @@
+Semantic HTML Tags:
+------------------
+A semantic element clearly describes the meaning of its content to both the browser and the developer 
+
+Semantic/HTML 5 elements that define different parts of the web page:
+---------------------------------------------------------------------
+1. <section> - A section is a grouping of content, typically with a heading - A web page normally be split into different sections such as introduction, content and contact information
+
+2. <article> - specifies independent and self-contained content - it should make sense on its own like a forum/blog posts, product cards, news paper article
+
+NOTE: We can nest <section> elements within <article> element and <article> elements within <section> element.
+
+3. <header> - represents a container for introductory content or for a set of navigational links. We can have several header elements within one HTML document but we cant have header elements within footer, address or another header element.
+
+4. <footer> - defines a footer for a document or section. We can have several footer elements in one document - it can contain copyrights/contact info or sitemap, back to top links and links to related documents
+
+5. <nav> - defines a set of navigational links - it is only for major group of navigational links
+
+6. <aside> - defines some content/complementary text which is not as important as the main content - should be indirectly related to the surrounding content 
+
+7. <figure> - specifies self-contained content like illustrations, diagrams, photos, code listings - It contains two elements - <img> element holds the actual image/illustration and <figcaption> element defines a caption for the <figure> - figcaption can be the first or last element of the figure element
+
+8. <details> - defines additional details that the user can view or hide - It goes together with summary element which defines the visible heading of the details element and p tag which defines the additional details itself
+
+9. <main> - specifies the main content of the document 
+
+10. <mark> - helps to mark a text as highlighted
+
+11. <datalist> - 
+
+12. <fieldset>
+
+13. <time>
+
+14. <select>
+
+15. <input>
+
+16. <optgroup>
+
+17. <hgroup>
+
+18. <wbr>
+
+19. <canvas>
+
+20. <audio>
+
+21. <command>
+
+22. <datatemplate>
+
+23. <meter>
+
+24. <embed>
+
+25. <output>
+
+26. <address>
+
+27. <abbr>
+
+28. <progress>
+
+29. <video>
+
+30. <base>
+
+31. <blockquote>
+
+32. <button>
+
+33. <caption>
+
+34. <cite>
+
+35. <code>
+
+36. <dl>, <dd>, <dt> - 
+
+37. <link>
+
+38. <li>, <ul>, <ol> - 
+
+39. <map>, <area> - 
+
+40. <col>, <colgroup> -
+
+41. <menu>
+
+42. <meta>
+
+43. <script>
+
+44. <noscript>
+
+45. <style>
+
+46. <strong> , <b> , <em> -
+
+47. <small> - 
+
+48. <sub>, <sup> - 
+
+49. <table>, <tbody>, <tfooter>, <thead>- 
+
+50. <textarea> - 
+
+51. <span> - 
+
+52. <div> - 
+
+53. <iframe> - 
+
+54. <ins>, <del> - 
+
+55. <dfn> - 
+
+56. <pre>, <q> - 
+
+

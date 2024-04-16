@@ -1,0 +1,5 @@
+Creating Tables:
+----------------
+1. Table gives structure to tabular data - data made of rows and columns - we dont want to use table for entire page layout
+
+2. Table doesnt automatically occupy the full width of the page like aside or paragraph element - It only expands to contain the content within the table and appends margin for the rest of the width 

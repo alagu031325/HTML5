@@ -1,0 +1,195 @@
+<!-- Naming convention - No spaces-can use '-'/'_'/ lower case file names -->
+
+<!-- HTML achieves document organization with semantic html - this helps to quickly read different sections in the web page and navigate to those sections - semantic tags provide additional meaning rather than generic divider - makes accessible to screen readers - provide outline to the page  -->
+
+<!-- Doctype declaration is a must not a html element - Hypertext links everything on the web and makes it work together -->
+<!DOCTYPE html>
+
+<!-- An HTML element consists of starting(opening) and ending(closing) tag and everything in between - contains two main sections - 'head' (contains data that is not seen on the page but considered to be meta data about the page) and 'body' (contains content that everybody can see in the browser) -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- meta tags with commonly used meta attributes -->
+    <meta name="author" content="Alagu" />
+    <meta
+      name="description"
+      content="This page contains html elements that I am currently learning." />
+    <title>My First Web Page</title>
+    <!-- link tags are point in resources from other parts of the web or on our server -->
+    <link rel="icon" href="../static/images/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/main.css" type="text/css" />
+  </head>
+  <body>
+    <!-- header tag gives semantic meaning representing the header section of the page -->
+    <header>
+      <!-- Generally we put only one h1(biggest heading) element per page and that explains what our page is about -->
+      <h1>Semantic HTML Playground</h1>
+
+      <!-- Nav element used to navigate to rest of the page - if more than 1 nav element in a page we should label them to make it accessible-->
+      <nav aria-label="primary-navigation">
+        <ul>
+          <!-- Another type of link that we can create is the link to the area on the same page itself internal reference - we use # with id value of the created semantic section -->
+          <li><a href="#html">Web Developer</a></li>
+          <li><a href="#vacation">Vacation Plan</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <!-- HTML entites - are used to introduce some symbols or white spaces in the content and starts with '&' -->
+
+    <!-- There can only be 1 main element per page -->
+    <main>
+      <!-- article has a clear topic of discussion whereas section includes more generic - to create a little section in layout -->
+      <article id="html">
+        <h2>How to become a Web developer</h2>
+        <p>I am ready to learn and create😊</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="../static/images/html5.png"
+            width="200px"
+            height="150px"
+            alt="HTML5 logo"
+            title="Power of Web" />
+          <!-- Figure is not only for images but are also used to show code samples or other contents-->
+          <figure>
+            <!-- captions will either be the first or the last element inside figure -->
+            <figcaption>HTML5 code snippet:</figcaption>
+            <p>
+              <!-- code element is an inline element which doesnt create a line break -->
+              <code>&lt;h1&gt;Hello World!!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+
+          <!-- Ordered List with list items -->
+          <ol>
+            <li>I learn HTML5 🔰</li>
+            <li>I learn CSS3 💷</li>
+            <li>learn JS ES6 💴</li>
+            <li>I learn React 🤑</li>
+          </ol>
+          <!-- anchor tag requires href attribute to reference an address on the web - if we give full address of web page then it is absolute reference - we can also give relative references with respect to the current path (See down)-->
+          <p>
+            ... I use resources from
+            <abbr title="Mozilla Developer Network">
+              <a href="https://developer.mozilla.org/en-US/" target="_blank"
+                >MDN</a
+              ></abbr
+            >
+            🆓
+            <!-- This abbreviation tooltip will not be available to screen readers so anything important about page shouldnt go in there -->
+          </p>
+          <aside>
+            <!-- another section of complementary text which is not as important as the article or main section -->
+            <details>
+              <!-- Details and summary work together - can provide details about a product like warrenty information - return policy - summary summarize the main topic and 'p' tag adds answer to it -->
+              <summary>
+                <!-- mark used as a highlighter -->
+                Guess the <mark>number of hours</mark> I code everyday
+              </summary>
+              <p>
+                <!-- time element makes it easy for browsers to read - indicates specific period of time(PT) or datetime -->
+                I start at <time datetime="09:00">9 am</time> and code for
+                <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
+
+      <hr />
+
+      <!-- <br>*100 - includes 100 line breaks emmet abbreviation -->
+
+      <!-- Every paragraph and heading starts on a new and it is a block level elements - whereas em/strong are inline elements that doesnt introduce break and spaces in the line-->
+
+      <article id="vacation">
+        <h2>I am planning for a vacation ✈️</h2>
+
+        <!-- When we mouse over the image the title pops up and this title not accessible to screen readers - we are specifying the width and height of the image just to give the browser an idea of the aspect ratio of the image that is coming in - can replaced by css properties-->
+
+        <img
+          src="../static/images/relax.jpeg"
+          alt="Vacation at Beach"
+          title="Vacation outside ipswich"
+          width="300"
+          height="210" />
+
+        <p>I've been working hard and <em>really need a getaway 🏃‍♀️</em></p>
+        <p>I live in Ipswich and would love to visit Beach 🏖️</p>
+        <section>
+          <h3>Places I'd like to visit 💓</h3>
+          <ul>
+            <!-- extra spaces will be created if p tag nested within li -->
+            <li>
+              <p>I've heard good things about Scotland 🥶</p>
+              <figure>
+                <img
+                  src="../static/images/scotland_travel.jpg"
+                  alt="Scotland Travel Pictures"
+                  width="600"
+                  height="300"
+                  title="Mysterious Palace"
+                  loading="lazy" />
+                <figcaption>Scotland Sightseeing Places</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I have also heard nice reviews about going here:</p>
+              <!-- informs browser that the content specifies a location -->
+              <address>Clacton-on-Sea CO15 1FS</address>
+            </li>
+            <!-- loading 'eager' is the value by default / lazy - loads any image only when the image comes into viewport/visible area - this makes page loads faster-->
+            <p>
+              <figure>
+                <!-- To include associated captions for image - figcaption helps browsers and assistive technology to know that this caption is directly related to image-->
+                <img
+                  src="../static/images/beach.jpeg"
+                  alt="Clacton-on-Sea Beach"
+                  title="I want to visit a Beach"
+                  width="600"
+                  height="300"
+                  loading="lazy" />
+                <figcaption>Clacton-on-Sea Beach</figcaption>
+              </figure>
+            </p>
+          </ul>
+        </section>
+        <!-- Block and inline elements -->
+
+        <!-- div is much like a section without semantic meaning - block elements - we should use div only when no semantic element matches our requirement - we can use span element to wrap one or more words in a paragraph - they have no semantic meaning by themselves-->
+
+        <section>
+          <h3>Places I'd like to avoid 😏</h3>
+          <!-- Inside description list there are two different types of element - description term and description detail -->
+          <dl>
+            <dt>North Pole:</dt>
+            <dd>I hear this is <strong>very cold 🥶</strong></dd>
+
+            <dt>South Pole:</dt>
+            <dd>This is also too cold😵</dd>
+
+            <dt>Mountain Tops:</dt>
+            <dd>These are also too cold 🤧</dd>
+          </dl>
+        </section>
+      </article>
+
+      <hr />
+    </main>
+    <!-- Header hierarchy are important for screen readers - So we should organize our page -->
+    <footer>
+      <p>
+        HTML Entites : &lt;&lt;&lt; &copy;
+        <a href="about.html" target="_blank">Alagu</a> &gt;&gt;&gt;
+      </p>
+      <!-- Keep your link text short to exact topic - brief description -->
+      <p><a href="#">Back to Top</a></p>
+    </footer>
+    <!-- There can be more than 1 header and footer for a page -->
+  </body>
+</html>
